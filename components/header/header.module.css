@@ -1,0 +1,20 @@
+.contain {
+  @apply 
+    py-4
+    shadow-lg;
+}
+.header {
+  @apply 
+  w-11/12
+  flex
+  justify-between
+  mx-auto;
+}
+
+.dark {
+  @apply 
+  flex
+  items-center
+  gap-2
+  cursor-pointer
+}

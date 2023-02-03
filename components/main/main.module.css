@@ -1,0 +1,77 @@
+.top{
+    @apply
+    mt-12
+    flex
+    items-center
+    justify-between
+    w-11/12
+    mx-auto
+}
+
+.section{
+    @apply
+    flex
+    flex-wrap
+    w-11/12
+    mx-auto
+}
+.input input{
+    @apply
+    bg-transparent
+}
+.selectbox select{
+    @apply
+    bg-transparent
+}
+
+.countryBox{
+    @apply
+    w-1/4
+    h-72
+    mt-24
+}
+
+.country{
+    @apply
+    flex
+    flex-col
+    w-9/12
+    h-[400px]
+
+    
+}
+
+.image{
+    @apply
+    relative
+    w-full
+    h-1/2
+    mx-auto
+
+}
+
+
+.description{
+    @apply
+    w-full
+    shadow-md
+    py-4
+    px-6
+}
+
+.countryName{
+    @apply
+    font-bold
+    text-2xl
+    mt-4
+}
+.info{
+    @apply
+    font-bold
+}
+
+.info span{
+    @apply
+    font-normal
+    left-4
+}
