@@ -7,13 +7,13 @@
 .darkmode{
     @apply
     bg-[#202c37]
-    text-white
+    text-[#fff]
 }
 
 .whitemode{
     @apply
-    bg-[#fafafa]
-    text-black
+    bg-[#fff]
+    text-[#202c37]
 }
 
 main{

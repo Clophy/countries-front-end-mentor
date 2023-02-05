@@ -19,6 +19,13 @@
 .input input{
     @apply
     bg-transparent
+    shadow-lg
+    p-3
+
+}
+.input input::placeholder{
+    @apply
+    text-white
 }
 .selectbox select{
     @apply
@@ -31,9 +38,8 @@
     w-full
     h-72
     mt-8
-    
-    
 }
+
 
 .country{
     @apply
@@ -41,7 +47,7 @@
     flex-col
     w-3/5
     mx-auto
-    
+    shadow-lg
 }
 
 .image{

@@ -91,9 +91,9 @@ function Country(param) {
                     </ul>
                   </div>
                   </div>
-                  <div className={Styles.borders}>Borders: 
+                  <div className={Styles.borders}>Border Countries: 
                     <ul>
-                    {country.borders.map((lol) =>
+                    {country.borders?.map((lol) =>
                       countries.map(
                         (count, index) =>
                           count.fifa === lol && (

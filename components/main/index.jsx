@@ -55,8 +55,9 @@ function Main({ nunito }) {
             ? search === ""
               ? countries.map((country, index) => (
                   <div key={index} className={Styles.countryBox}>
-                    <Link href={`${country.altSpellings[0]}`}>
+                    
                     <div className={Styles.country}>
+                    <Link  href={`${country.altSpellings[0]}`}>
                       <div className={Styles.image}>
                         <Image
                           src={`${country.flags.png}`}
@@ -81,46 +82,50 @@ function Main({ nunito }) {
                           </p>
                         </div>
                       </div>
+                      </Link>
                     </div>
-                    </Link>
+                    
                   </div>
                 ))
               : countries.map((country, index) =>
                   country.name.common.toUpperCase().search(search) !== -1 ? (
                     <div key={index} className={Styles.countryBox}>
-                      <div className={Styles.country}>
-                        <div className={Styles.image}>
-                          <Image
-                            src={`${country.flags.png}`}
-                            fill
-                            alt="sa"
-                            unoptimized
-                          ></Image>
+                    <div className={Styles.country}>
+                    <Link  href={`${country.altSpellings[0]}`}>
+                      <div className={Styles.image}>
+                        <Image
+                          src={`${country.flags.png}`}
+                          fill
+                          alt="sa"
+                          unoptimized
+                        ></Image>
+                      </div>
+                      <div className={Styles.description}>
+                        <div className={`${Styles.countryName} ${nunito}`}>
+                          <h2>{country.name.common}</h2>
                         </div>
-                        <div className={Styles.description}>
-                          <div className={`${Styles.countryName} ${nunito}`}>
-                            <h2>{country.name.common}</h2>
-                          </div>
-                          <div className={Styles.countryInfo}>
-                            <p className={Styles.info}>
-                              Population:<span> {country.population}</span>
-                            </p>
-                            <p className={Styles.info}>
-                              Region <span> {country.region}</span>
-                            </p>
-                            <p className={Styles.info}>
-                              Capital <span> {country.capital}</span>
-                            </p>
-                          </div>
+                        <div className={Styles.countryInfo}>
+                          <p className={Styles.info}>
+                            Population:<span> {country.population}</span>
+                          </p>
+                          <p className={Styles.info}>
+                            Region <span> {country.region}</span>
+                          </p>
+                          <p className={Styles.info}>
+                            Capital <span> {country.capital}</span>
+                          </p>
                         </div>
                       </div>
+                      </Link>
+                    </div>
                     </div>
                   ) : null
                 )
             : countries.map((country, index) =>
                 country.region === select ? (
                   <div key={index} className={Styles.countryBox}>
-                    <div className={Styles.country}>
+                  <div className={Styles.country}>
+                    <Link  href={`${country.altSpellings[0]}`}>
                       <div className={Styles.image}>
                         <Image
                           src={`${country.flags.png}`}
@@ -145,6 +150,7 @@ function Main({ nunito }) {
                           </p>
                         </div>
                       </div>
+                      </Link>
                     </div>
                   </div>
                 ) : null
