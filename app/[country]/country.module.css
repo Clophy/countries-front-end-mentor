@@ -1,0 +1,111 @@
+.flag{
+    @apply
+    sm:w-2/5
+    sm:h-[350px]
+    relative
+    w-2/3
+    mx-auto
+    sm:mx-0
+    h-[150px]
+
+}
+
+.back{
+    @apply
+    w-3/4
+    mx-auto
+    h-24
+    flex
+    items-center
+}
+
+.back a{
+    @apply
+    border
+    border-gray-600
+    flex
+    items-center
+    gap-3
+    p-2
+    shadow-lg
+}
+
+.contain{
+    @apply
+    sm:w-3/4
+    w-11/12
+    mx-auto
+    sm:mt-12
+    flex
+    justify-between
+    sm:flex-row
+    flex-col
+}
+
+.information{
+    @apply
+    sm:w-1/2
+    w-full
+    justify-self-end
+    mt-6
+    sm:mt-0
+}
+
+.title{
+    @apply
+    font-black
+    text-3xl
+    w-full
+    
+}
+.skills{
+    @apply
+    flex
+    flex-wrap
+    mt-12
+}
+
+.skills li{
+    @apply
+    flex
+    gap-2
+}
+.skills span{
+    @apply
+    text-gray-400
+}
+
+.leftSide{
+    @apply
+    w-1/2
+}
+
+.rigthSide{
+    @apply
+    w-1/2
+}
+
+.borders {
+    @apply
+    flex
+    mt-12
+    gap-4
+    items-center
+}
+
+.borders ul{
+    @apply
+    list-none
+    flex
+    gap-4
+}
+
+.borders li{
+    @apply
+    border
+    px-2
+    py-1
+    border-gray-600
+    shadow-lg
+}
+

@@ -14,6 +14,7 @@
     flex-wrap
     w-11/12
     mx-auto
+    py-8
 }
 .input input{
     @apply
@@ -26,28 +27,29 @@
 
 .countryBox{
     @apply
-    w-1/4
+    sm:w-1/4
+    w-full
     h-72
-    mt-24
+    mt-8
+    
+    
 }
 
 .country{
     @apply
     flex
     flex-col
-    w-9/12
-    h-[400px]
-
+    w-3/5
+    mx-auto
     
 }
 
 .image{
     @apply
     relative
-    w-full
-    h-1/2
     mx-auto
-
+    h-[150px]
+    w-full
 }
 
 
@@ -55,23 +57,22 @@
     @apply
     w-full
     shadow-md
-    py-4
-    px-6
+    pl-4
+    py-3
+    
 }
 
 .countryName{
     @apply
-    font-bold
-    text-2xl
-    mt-4
+    font-black
 }
 .info{
     @apply
-    font-bold
+    font-normal
 }
 
 .info span{
     @apply
-    font-normal
+    font-thin
     left-4
 }

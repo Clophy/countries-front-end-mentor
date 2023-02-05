@@ -6,12 +6,32 @@
 
 .darkmode{
     @apply
-    bg-gray-500
+    bg-[#202c37]
     text-white
 }
 
 .whitemode{
     @apply
-    bg-white
+    bg-[#fafafa]
     text-black
+}
+
+main{
+    @apply
+    w-full
+    h-full
+    min-h-screen
+}
+
+select{
+    padding: 4px;
+    color:red;
+    border-radius: 4px;
+
+}
+select option{
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    margin-top: 2px;
 }
